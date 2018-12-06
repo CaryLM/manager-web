@@ -1,20 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import ManagerInterface from '@/components/manager-interface.vue'
-
+import ManagerInterface from '../components/manager-interface'
+import Login from '../components/login'
 Vue.use(Router)
+
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path:'/',
+      component:Login,
     },
     {
-      path:'/manager-interface',
-      name:'manager-interface',
+      path:'/ManagerInterface',
+      name:'ManagerInterface',
       component:ManagerInterface,
     }
   ]

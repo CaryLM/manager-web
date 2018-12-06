@@ -1,24 +1,18 @@
 <template>
-  <div id="app">
-    <el-container>
-      <el-header>管理员登陆</el-header>
-      <el-main>
-        <RegisterInput></RegisterInput>
-      </el-main>
-    </el-container>
-  </div>
+  <router-view></router-view>
 </template>
 <script>
-  import RegisterInput from "./components/register-input";
 export default {
-  components: {RegisterInput}
+  data:function(){
+    return {
+
+    }
+  },
 }
 </script>
 <style scoped>
-  .el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
+  #app{
+    background: url("./assets/timg.jpg");
   }
+
 </style>
