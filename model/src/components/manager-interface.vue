@@ -4,7 +4,9 @@
       <navigation></navigation>
     </el-aside>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>管理界面
+        <Exitbutton></Exitbutton>
+      </el-header>
       <el-main>Main</el-main>
     </el-container>
   </el-container>
@@ -12,9 +14,10 @@
 
 <script>
     import Navigation from "./navigation";
+    import Exitbutton from "./exit-button";
     export default {
         name: "manager-interface",
-      components: {Navigation}
+      components: {Navigation,Exitbutton}
     }
 </script>
 
@@ -37,6 +40,7 @@
     background-color: #E9EEF3;
     color: #333;
     text-align: center;
-    line-height: 600px;
+    line-height: 800px;
   }
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <el-button type="info" round>信息按钮</el-button>
+  <el-button type="info" round>Sign out</el-button>
 </template>
 
 <script>
@@ -9,5 +9,4 @@
 </script>
 
 <style scoped>
-
 </style>
