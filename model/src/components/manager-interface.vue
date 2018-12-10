@@ -21,7 +21,7 @@
               <!--<template slot="title">分组一</template>-->
               <el-submenu index="1-1">
                 <template slot="title">平均交易量</template>
-                <el-menu-item index="1-1-1">平均日交易量</el-menu-item>
+                <el-menu-item index="1-1-1"><router-link to="ManagerInterface/AvMonthTrade">平均日交易量</router-link></el-menu-item>
                 <el-menu-item index="1-1-2">平均月交易量</el-menu-item>
                 <!--</el-menu-item-group>-->
                 <!--<el-menu-item-group title="分组2">-->
@@ -58,17 +58,17 @@
       <el-header>管理界面
         <Exitbutton></Exitbutton>
       </el-header>
-      <el-main>Main</el-main>
+      <el-main><router-view></router-view></el-main>
     </el-container>
   </el-container>
 </template>
 
 <script>
-    import Navigation from "./navigation";
-    import Exitbutton from "./exit-button";
+    import AvMonthTrade from "./avenge-month-trade"
+    import Exitbutton from "./exit-button"
     export default {
         name: "manager-interface",
-      components: {Navigation,Exitbutton}
+      components: {AvMonthTrade,Exitbutton},
     }
 </script>
 
@@ -91,7 +91,7 @@
     background-color: #E9EEF3;
     color: #333;
     text-align: center;
-    line-height: 800px;
+    line-height:800px;
   }
   .el-menu {
     background-color: #D3DCE6;
