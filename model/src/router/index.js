@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import ManagerInterface from '../components/manager-interface'
-import AvMonthTrade from '../components/avenge-month-trade'
+import DayTradeTotal from '../components/TradeTotal/DayTradeTotal'
+import MonthTradeTotal from '../components/TradeTotal/MonthTradeTotal'
+import YearTradeTotal from '../components/TradeTotal/YearTradeTotal'
+import ManagerOrders from '../components/ManagerOrders'
 
 // import Login from '../components/login'
 const loginpage=resolve=>require(['@/components/login'],resolve)
@@ -25,10 +28,22 @@ let router=new Router({
       component:ManagerInterface,
       children:[
         {
-          path:'/ManagerInterface/AvMonthTrade',
-          name:'AvMonthTrade',
-          component:AvMonthTrade,
-        }
+          path:'/ManagerInterface/DayTradeTotal',
+          name:'daytradetotal',
+          component:DayTradeTotal,
+        },{
+          path:'/ManagerInterface/MonthTradeTotal',
+          name:'monthtradetotal',
+          component:MonthTradeTotal,
+        },{
+          path:'/ManagerInterface/YearTradeTotal',
+          name:'yeartradetotal',
+          component:YearTradeTotal,
+        },{
+          path:'/ManagerInterface/ManagerOrders',
+          name:'managerorders',
+          component:ManagerOrders,
+        },
       ]
     },
   ]
