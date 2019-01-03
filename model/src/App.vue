@@ -14,7 +14,7 @@
 </script>
 <style scoped>
   #app{
-    background: url("./assets/timg.jpg");
+    background: url("./assets/timg1.jpg");
   }
 
 </style>
