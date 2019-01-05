@@ -97,7 +97,7 @@
         this.$refs.AccountFrom.validate((valid)=>{
           if(valid){
             this.logining=true;
-            const loginParams={cUsername:this.account.username,cPwd:this.account.pwd};
+            var loginParams={cUsername:this.account.username,cPwd:this.account.pwd};
             requestLogin(loginParams).then(data=>{
               this.logining=false;
               if(data.code=='200'){
